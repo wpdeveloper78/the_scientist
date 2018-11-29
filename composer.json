@@ -8,10 +8,14 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "php": ">=7.0.0",
+    "php": ">=7.1.0",
     "fideloper/proxy": "~4.0",
     "laravel/framework": "5.7.*",
-    "laravel/tinker": "~1.0"
+    "laravel/tinker": "~1.0",
+    "league/factory-muffin": "^3.0",
+    "myclabs/php-enum": "^1.6",
+    "symfony/property-access": "~4.1",
+    "symfony/serializer": "~4.1"
   },
   "require-dev": {
     "filp/whoops": "~2.0",
@@ -32,7 +36,7 @@
     ],
     "psr-4": {
       "App\\": "app/",
-      "LaravelDay\\Article": "src/"
+      "Acme\\": "src/"
     }
   },
   "autoload-dev": {
