@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use  LaravelDay\UseCase\Artcle;;
+
 class ListArtcleController extends Controller
 {
-    public function invoke(){
+    public function __invoke(){
 
-        $listArticle = new Article();
+        $listArticle = new ListArticles();
 
         return $listArticle;
     }
